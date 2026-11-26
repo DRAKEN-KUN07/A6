@@ -1,0 +1,17 @@
+{
+  "name": "assignment-6-nodejs-web-server",
+  "version": "1.0.0",
+  "description": "Simple modular Node.js HTTP web server serving FreshFold Laundry HTML pages, CSS styling, and custom error routes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "nodejs",
+    "http",
+    "web-server",
+    "routing"
+  ],
+  "license": "ISC"
+}

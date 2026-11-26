@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | FreshFold Laundry &amp; Dry Cleaning</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/home">FreshFold<span>Laundry</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/home">Home</a>
+        <a href="/services">Services</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+        <a class="active" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge">Get In Touch</span>
+        <h1>Contact &amp; Pickup Request</h1>
+        <p class="lead">
+          Have a special care instruction, want to schedule a pickup, or need a commercial quote?
+          Reach out below.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Send a Message or Request Pickup</h2>
+          <form action="/contact" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Alex Rivera" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="alex@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="Wash & Fold">Wash &amp; Fold</option>
+                <option value="Dry Cleaning & Press">Dry Cleaning &amp; Press</option>
+                <option value="Bedding & Linens">Bedding &amp; Linens</option>
+                <option value="Express Same-Day">Express Same-Day</option>
+                <option value="Commercial Inquiry">Commercial Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pickup Details or Question</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Preferred pickup window, detergent preference, or questions..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit Request</button>
+          </form>
+        </article>
+
+        <aside class="card">
+          <h2>Storefront &amp; Support Details</h2>
+          <p>
+            Prefer stopping by or calling directly? Our team is available seven days a week to help
+            with stain questions and recurring pickup schedules.
+          </p>
+          <div class="summary-box">
+            <p><strong>Address:</strong> 418 Maple Avenue, Suite B</p>
+            <p><strong>Phone:</strong> (555) 234-8910</p>
+            <p><strong>Email:</strong> hello@freshfoldlaundry.example</p>
+            <p><strong>Hours:</strong> Daily, 7:30 AM – 8:30 PM</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-secondary" href="/pricing">Check Pricing</a>
+            <a class="btn btn-secondary" href="/home">Back to Home</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 FreshFold Laundry &amp; Dry Cleaning. Served via Node.js HTTP server.</p>
+      <div class="footer-links">
+        <a href="/home">Home</a>
+        <a href="/services">Services</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
